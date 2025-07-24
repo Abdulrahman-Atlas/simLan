@@ -1,0 +1,22 @@
+put 1,r1
+put 1,r10
+put 5,r30
+add r1,r30
+put 1,r5
+jmpe r5,r30,18
+put 0,r6
+put 0,r7
+jmpe r6,r10,13
+add r5,r7
+add r1,r6
+jmpu 9
+jmpe r10,r7,16
+add r1,r10
+jmpu 13
+add r1,r5
+jmpu 6
+prn r10
+halt
+
+// An example program using the interpreted simple language
+// Finds the factorial of r30 register
